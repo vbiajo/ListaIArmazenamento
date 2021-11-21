@@ -1,0 +1,257 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>Lista I - Sistemas de Armazenamento</title><meta name="generator" content="MATLAB 9.9"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2021-11-21"><meta name="DC.source" content="script.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; }
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+span.typesection { color:#A0522D }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><h1>Lista I - Sistemas de Armazenamento</h1><!--introduction--><pre>Aluno: V&iacute;tor H. M. Biajo
+Data: 21/11/2021
+Professor: Igor Amariz Pires</pre><!--/introduction--><h2>Contents</h2><div><ul><li><a href="#1">Turbina E&oacute;lica</a></li></ul></div><h2 id="1">Turbina E&oacute;lica</h2><p>Com o objetivo de estudar a capta&ccedil;&atilde;o de pot&ecirc;ncia por uma turbina e&oacute;lica, o presente estudo considera uma turbina de 1,5 MW e raio de 37,5 m. As seguintes velocidades de vento foram consideradas:</p><p><img src="script_eq07190996051064905215.png" alt="$$V_{vento} = [5,5 \: 6,5 \: 7,5 \: 8,5 \: 9,5 \: 10,5 \: 11,5 \: 12,5 \: 13,5 \: 14,5]$$"></p><p>Outros par&acirc;metros s&atilde;o definidos de acordo com a declara&ccedil;&atilde;o de vari&aacute;veis a seguir:</p><pre class="codeinput">clc; clear <span class="string">all</span>;
+
+<span class="comment">% Declara&ccedil;&atilde;o de vari&aacute;veis</span>
+P_turb  = 1.5e6;                <span class="comment">% Pot&ecirc;ncia da turbina - [W]</span>
+R_turb  = 37.5;                 <span class="comment">% Raio da turbina - [m]</span>
+V_vento = [5.5 6.5 7.5 8.5 9.5 10.5 11.5 12.5 13.5 14.5]; <span class="comment">% Vetor de velocidade de vento [m/s]</span>
+N_turb  = 0:0.1:30;             <span class="comment">% Rota&ccedil;&atilde;o da turbina [rpm]</span>
+w_turb  = N_turb * pi / 30;     <span class="comment">% Rota&ccedil;&atilde;o da turbina [rad/s]</span>
+ro_ar   = 1.3;                  <span class="comment">% Densidade do ar [kg/m&sup3;]</span>
+A = pi*R_turb^2;                <span class="comment">% &Aacute;rea de capta&ccedil;&atilde;o do ar [m&sup2;]</span>
+beta  = 0;                      <span class="comment">% &Acirc;ngulo de ataque das p&aacute;s [&ordm;]</span>
+
+<span class="comment">% Inicializa&ccedil;&atilde;o de vetores</span>
+P = zeros(length(N_turb),length(V_vento));
+MPPT_Y = zeros(length(V_vento),1);
+MPPT_X = zeros(length(V_vento),1);
+</pre><p>Para o c&aacute;lculo de capta&ccedil;&atilde;o de potencia, deve-se primeiro calcular a raz&atilde;o entre as velocidade da ponta das p&aacute;s da turbina e&oacute;lica e a velocidade do vento pela equa&ccedil;&atilde;o a seguir:</p><p><img src="script_eq05327113055991054470.png" alt="$$\lambda = \frac{w_{turbina} R}{v_{vento}}$$"></p><p>Com o fator <img src="script_eq07657233533591063549.png" alt="$\lambda$"> calculado, pode-se calcular ent&atilde;o a mesma raz&atilde;o para um dado &acirc;ngulo de ataque (<img src="script_eq17331442575217596290.png" alt="$\beta$">), por meio da equa&ccedil;&atilde;o a seguir.</p><p><img src="script_eq17923041959096606752.png" alt="$$\frac{1}{\lambda _i} = \frac{1}{\lambda + 0,08 \beta} - \frac{0,035}{\beta ^3 + 1}$$"></p><p>Ent&atilde;o, obt&eacute;m-se o coeficiente de capta&ccedil;&atilde;o de pot&ecirc;ncia <img src="script_eq14049055498313643901.png" alt="$C_p$"> para um dado par ( <img src="script_eq15219824842097305892.png" alt="$\lambda,\beta$">).</p><p><img src="script_eq01824677523266146141.png" alt="$$C_p(\lambda,\beta) = 0,22 \left (  \frac{116}{\lambda _i} - 0,4 \beta - 5 \right ) \cdot e^{-12,5/\lambda _ i}$$"></p><p>Por fim, com o coeficiente de pot&ecirc;ncia, pode-se calcular a pot&ecirc;ncia captada para uma determinada velocidade de vento, pela seguinte f&oacute;rmula:</p><p><img src="script_eq00990609790869283303.png" alt="$$P = \frac{1}{2} \rho _{ar} A v_{vento}^3 C_p (\lambda,\beta) $$"></p><p>Esse procedimento &eacute; feito iterativamente para diversas velocidades de vento de modo a constituir curvas caracter&iacute;sticas de pot&ecirc;ncia e velocidade para um sistema e&oacute;lica. Os passos s&atilde;o mostrados nas linhas de c&oacute;digo a seguir. Os c&aacute;lculos s&atilde;o feitos iterativamente em conjunto com a plotagem das curvas.</p><pre class="codeinput">figure(1)
+hold <span class="string">on</span>
+grid <span class="string">on</span>
+title(<span class="string">"Curva de extra&ccedil;&atilde;o de pot&ecirc;ncia em turbina e&oacute;lica"</span>)
+ylabel(<span class="string">"Pot&ecirc;ncia (W)"</span>)
+xlabel(<span class="string">"Velocidade da turbina (rpm)"</span>)
+
+
+<span class="comment">% Itera&ccedil;&atilde;o sobre vetor de velocidade do vento</span>
+<span class="keyword">for</span> i = 1:length(V_vento)
+    <span class="comment">% Calcula lambda para velocidade de vento fixa</span>
+    lambda = w_turb * R_turb / V_vento(i);
+    lambda_i = (1./(lambda+0.08.*beta) - 0.035./(beta.^3+1)).^-1;
+
+    <span class="comment">% Calcula Cp em fun&ccedil;&atilde;o de lambda e beta</span>
+    Cp = 0.22 .* (116./lambda_i - 0.4.*beta - 5) .* exp(-12.5./lambda_i);
+
+    <span class="comment">% Calcula pot&ecirc;ncia da turbina</span>
+    P(:,i) = 1/2 .* ro_ar .* A .* V_vento(i)^3 .* Cp;
+    plot(N_turb, P(:,i), <span class="string">"color"</span>, <span class="string">"blue"</span>);
+
+    <span class="comment">% Acha ponto de m&aacute;xima pot&ecirc;ncia</span>
+    MPPT_Y(i) = max(P(:,i));
+    MPPT_X(i) = N_turb(find(P(:,i) == MPPT_Y(i)));
+
+    <span class="comment">% Adiciona texto de orienta&ccedil;&atilde;o no gr&aacute;fico</span>
+    txt = strcat(<span class="string">'V_{vento} = '</span>, <span class="string">" "</span>, num2str(V_vento(i),<span class="string">'%.2f'</span>), <span class="string">" "</span>, <span class="string">'m/s^2'</span>);
+    text(MPPT_X(i),MPPT_Y(i),txt,<span class="string">'FontSize'</span>,7)
+<span class="keyword">end</span>
+</pre><img vspace="5" hspace="5" src="script_01.png" alt=""> <p>Como mostrado pelas linhas de c&oacute;digo acima, os pontos de m&aacute;xima pot&ecirc;ncia tamb&eacute;m s&atilde;o extra&iacute;dos pela fun&ccedil;&atilde;o max() do Matlab, de maneira iterativa. Por fim, pode-se sobrepor a curva de m&aacute;xima pot&ecirc;ncia com os perfis de pot&ecirc;ncia e velocidade da turbina. A curva de m&aacute;xima pot&ecirc;ncia &eacute; destacada em vermelho.</p><pre class="codeinput">plot (MPPT_X,MPPT_Y, <span class="string">"color"</span>, <span class="string">"red"</span>);
+hold <span class="string">off</span>
+</pre><img vspace="5" hspace="5" src="script_02.png" alt=""> <p>N&atilde;o obstante, &eacute; importante notar que para o caso precedente, foi utilizado um &acirc;ngulo de ataque fixo em zero graus (0 &ordm;), o que n&atilde;o &eacute; sempre o caso. O mesmo influencia diretamente no c&aacute;lculo do coeficiente de pot&ecirc;ncia <img src="script_eq13645356103851554845.png" alt="$C_p(\lambda,\beta)$">, como no caso a seguir, em que foram considerados os seguintes &acirc;ngulos de ataque:</p><p><img src="script_eq17269805583312474003.png" alt="$$\beta = [0 \: 5 \: 10 \: 15 \: 20 \: 25 \: 30]$$"></p><p class="footer"><br><a href="https://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2020b</a><br></p></div><!--
+##### SOURCE BEGIN #####
+%% Lista I - Sistemas de Armazenamento
+% 
+%  Aluno: Vítor H. M. Biajo
+%  Data: 21/11/2021
+%  Professor: Igor Amariz Pires 
+%
+
+%% Turbina Eólica
+%
+% Com o objetivo de estudar a captação de potência por uma turbina eólica, o presente estudo considera uma turbina de 1,5 MW e raio de 37,5 m. As seguintes velocidades de vento foram consideradas: 
+%
+% $$V_{vento} = [5,5 \: 6,5 \: 7,5 \: 8,5 \: 9,5 \: 10,5 \: 11,5 \: 12,5 \: 13,5 \: 14,5]$$
+%
+% Outros parâmetros são definidos de acordo com a declaração de variáveis a
+% seguir:
+% 
+
+clc; clear all;
+
+% Declaração de variáveis
+P_turb  = 1.5e6;                % Potência da turbina - [W]
+R_turb  = 37.5;                 % Raio da turbina - [m]
+V_vento = [5.5 6.5 7.5 8.5 9.5 10.5 11.5 12.5 13.5 14.5]; % Vetor de velocidade de vento [m/s]
+N_turb  = 0:0.1:30;             % Rotação da turbina [rpm]
+w_turb  = N_turb * pi / 30;     % Rotação da turbina [rad/s]
+ro_ar   = 1.3;                  % Densidade do ar [kg/m³]
+A = pi*R_turb^2;                % Área de captação do ar [m²]
+beta  = 0;                      % Ângulo de ataque das pás [º]
+
+% Inicialização de vetores
+P = zeros(length(N_turb),length(V_vento));
+MPPT_Y = zeros(length(V_vento),1);
+MPPT_X = zeros(length(V_vento),1);
+
+%% 
+% Para o cálculo de captação de potencia, deve-se primeiro calcular a razão
+% entre as velocidade da ponta das pás da turbina eólica e a velocidade do
+% vento pela equação a seguir:
+
+%%
+% 
+% $$\lambda = \frac{w_{turbina} R}{v_{vento}}$$
+% 
+
+%% 
+% Com o fator $\lambda$ calculado, pode-se calcular então a mesma razão para
+% um dado ângulo de ataque ($\beta$), por meio da equação a seguir.
+
+%%
+% 
+% $$\frac{1}{\lambda _i} = \frac{1}{\lambda + 0,08 \beta} - \frac{0,035}{\beta ^3 + 1}$$
+% 
+
+
+%% 
+% Então, obtém-se o coeficiente de captação de potência $C_p$ para um dado par ( $\lambda,\beta$).
+
+
+%%
+% 
+% $$C_p(\lambda,\beta) = 0,22 \left (  \frac{116}{\lambda _i} - 0,4 \beta - 5 \right ) \cdot e^{-12,5/\lambda _ i}$$
+% 
+
+%% 
+% Por fim, com o coeficiente de potência, pode-se calcular a potência
+% captada para uma determinada velocidade de vento, pela seguinte
+% fórmula:
+
+%% 
+% 
+% $$P = \frac{1}{2} \rho _{ar} A v_{vento}^3 C_p (\lambda,\beta) $$
+% 
+
+
+%%
+% Esse procedimento é feito iterativamente para diversas velocidades de
+% vento de modo a constituir curvas características de potência e
+% velocidade para um sistema eólica. Os passos são mostrados nas linhas de
+% código a seguir. Os cálculos são feitos iterativamente em conjunto com a
+% plotagem das curvas.
+
+figure(1)
+hold on
+grid on 
+title("Curva de extração de potência em turbina eólica")
+ylabel("Potência (W)")
+xlabel("Velocidade da turbina (rpm)")
+
+
+% Iteração sobre vetor de velocidade do vento
+for i = 1:length(V_vento)
+    % Calcula lambda para velocidade de vento fixa
+    lambda = w_turb * R_turb / V_vento(i);
+    lambda_i = (1./(lambda+0.08.*beta) - 0.035./(beta.^3+1)).^-1;
+
+    % Calcula Cp em função de lambda e beta
+    Cp = 0.22 .* (116./lambda_i - 0.4.*beta - 5) .* exp(-12.5./lambda_i);
+
+    % Calcula potência da turbina
+    P(:,i) = 1/2 .* ro_ar .* A .* V_vento(i)^3 .* Cp;
+    plot(N_turb, P(:,i), "color", "blue");
+    
+    % Acha ponto de máxima potência
+    MPPT_Y(i) = max(P(:,i));
+    MPPT_X(i) = N_turb(find(P(:,i) == MPPT_Y(i)));
+    
+    % Adiciona texto de orientação no gráfico
+    txt = strcat('V_{vento} = ', " ", num2str(V_vento(i),'%.2f'), " ", 'm/s^2');
+    text(MPPT_X(i),MPPT_Y(i),txt,'FontSize',7)
+end 
+
+%% 
+% Como mostrado pelas linhas de código acima, os pontos de máxima potência
+% também são extraídos pela função max() do Matlab, de maneira iterativa.
+% Por fim, pode-se sobrepor a curva de máxima potência com os perfis de
+% potência e velocidade da turbina. A curva de máxima potência é destacada
+% em vermelho.
+
+plot (MPPT_X,MPPT_Y, "color", "red");
+hold off
+
+
+%%
+% Não obstante, é importante notar que para o caso precedente, foi
+% utilizado um ângulo de ataque fixo em zero graus (0 º), o que não é
+% sempre o caso. O mesmo influencia diretamente no cálculo do coeficiente
+% de potência $C_p(\lambda,\beta)$, como no caso a seguir, em que foram
+% considerados os seguintes ângulos de ataque:
+
+%%
+% 
+% $$\beta = [0 \: 5 \: 10 \: 15 \: 20 \: 25 \: 30]$$
+% 
+
+
+##### SOURCE END #####
+--></body></html>
